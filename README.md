@@ -1,4 +1,4 @@
-# Temperature Sensor
+# Temperature Sensor with ESP8266 and NodeJS
 
 To use this project for your own, you need to change the *server-ip* and *port* in [./server/server.js](./server/server.js)
 and you need to change the *ssid*, *Wifi-password*, *server-ip* and *port* in [./esp8266/datatransfer.ino](./esp8266/datatransfer.ino).
