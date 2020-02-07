@@ -16,9 +16,9 @@ For the power supply of the ESP8266 i use a normal powerbank.
 Here are some more information for beginners in the IoT-World:
 * You need to add "_ArduinoJSON_" and "_SimpleDHT_" to your Arduino-library
 * On the board i used, you need to connect the pins as follows:
-| Sensor-Pin | Borad-Pin |
-| ---------- | --------- |
-| + | 3v3 |
-| out | D4 |
-| - | GND |
+Sensor-Pin    | Borad-Pin    
+---------- | ---------
+ \+ | 3v3
+ out | D4
+ \- | GND
 * __First__ You need to compile and upload the [code](./esp8266/datatransfer.ino) to the board and __after__ that you can connect the sensor (in order out, -, +)
