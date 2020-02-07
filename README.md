@@ -5,4 +5,6 @@
 * On the server NodeJS is used for data handling and MongoDB to store the received data.
 
 
-You can
+Further informations about how to create a JSON Object in a .ino file can be found [here](https://arduinojson.org).
+
+For the power supply of the ESP8266 i use a normal powerbank.
