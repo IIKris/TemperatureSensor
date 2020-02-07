@@ -1,7 +1,7 @@
 # Temperature Sensor
 
-To use this project for your own, you need to change the *server-ip* and *port* in [*server.js*](./server/server.js)
-and you need to change the *ssid*, *Wifi-password*, *server-ip* and *port* in [*datatransfer.ino*](./esp8266/datatransfer.ino).
+To use this project for your own, you need to change the *server-ip* and *port* in [./server/server.js](./server/server.js)
+and you need to change the *ssid*, *Wifi-password*, *server-ip* and *port* in [./esp8266/datatransfer.ino](./esp8266/datatransfer.ino).
 
 * The Client is build with the ESP8266 (ESP-12E) board and the DHT22 sensor.
 * In this project the TCP protocol is used to send the data form the board to a server (in my case a raspberry pi).
