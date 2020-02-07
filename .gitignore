@@ -2,3 +2,6 @@
 /server/client.js
 /server/server-real.js
 techUsed.txt
+/server/node_modules
+/server/database.js
+jsonStructure.json

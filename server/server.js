@@ -1,12 +1,25 @@
 const net = require('net');
+const { SensorEntry } = require('./classes.js');
+const database = require('./database.js');
+const port = 8181;
+const host = 'your-server-ip-here';  //Change to your server-ip
 
-net
-  .createServer(socket => {
-    socket.on('readable', () => {
-      const data = socket.read();
-      if(Buffer.isBuffer(data)) {
-        console.log(data.toString());
-      }
-    });
-  })
-  .listen(8181, 'your-server-ip-here'); //change the port and ip here
+database
+  .createDay()
+  .then((res) => console.log('Day added'))
+  .catch((err) => console.log(err));
+
+const server = net.createServer();
+server.listen(port, host, 1280, () => {
+  console.log(`TCP Server in running on port ${port}.`);
+});
+
+server.on('connection', function(socket) {
+  let data = [];
+  socket.on('data', (chunk) => {
+      data.push(chunk)
+  });
+  socket.on('end', () => {
+    let obj = JSON.parse(Buffer.concat(data));
+  });
+});

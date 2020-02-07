@@ -50,8 +50,8 @@ void loop() {
   //create a json object with the data form the sensor
   const int capacity = JSON_OBJECT_SIZE(2);
   StaticJsonDocument<capacity> doc;
-  doc["temperature"]=temp;
-  doc["humidity"]=hum;
+  doc["temperature"].set(temp);
+  doc["humidity"].set(hum);
 
   // This will send the json object to the server
   if (client.connected()) {
