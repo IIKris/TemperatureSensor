@@ -1,7 +1,4 @@
-node_modules
-/esp8266/tcp.ino
 /esp8266/code
-/esp8266/esp8266.ino
 /server/client.js
 /server/server-real.js
 Links.md
