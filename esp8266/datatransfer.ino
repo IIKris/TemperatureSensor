@@ -7,15 +7,15 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 #ifndef STASSID
-#define STASSID "your-ssid"
-#define STAPSK  "yout-wifi-password"
+#define STASSID "your-ssid"           //change the ssid HERE
+#define STAPSK  "yout-wifi-password"  //change the Wifi-password HERE
 #endif
 
 const char* ssid     = STASSID;
 const char* password = STAPSK;
 
-const char* host = "your-server-ip";
-const uint16_t port = 8181; //Port
+const char* host = "your-server-ip";  //change the server-ip HERE
+const uint16_t port = 8181;           //change the port HERE
 
 void setup() {
 
