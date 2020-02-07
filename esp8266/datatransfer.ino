@@ -8,7 +8,7 @@ DHT dht(DHTPIN, DHTTYPE);
 
 #ifndef STASSID
 #define STASSID "your-ssid"           //change the ssid HERE
-#define STAPSK  "yout-wifi-password"  //change the Wifi-password HERE
+#define STAPSK  "your-wifi-password"  //change the Wifi-password HERE
 #endif
 
 const char* ssid     = STASSID;
