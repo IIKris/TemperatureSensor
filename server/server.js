@@ -22,6 +22,6 @@ server.on('connection', function(socket) {
   socket.on('end', () => {
     let obj = JSON.parse(Buffer.concat(data));
     let entry = new SensorEntry(new Date(), obj.temperature, obj.humidity);
-    database.insertSingleEntry(entry).then(() => console.log('Entry added'), (err) => console.log(err));
+    database.insertSingleEntry(entry).then(() => null, (err) => console.log(err));
   });
 });
